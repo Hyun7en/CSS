@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트 관련 스타일</title>
+    <style>
+        #c{
+            color: red;
+            color: #221b17;
+            color: rgb(116, 9, 9); /*각 값의 최대는 255*/
+            color: rgba(214, 27, 27, 0);/*각 값의 최대는 255*/
+        }
+        #td1{text-decoration: underline;}
+        #td2{text-decoration: line-through;}
+        #td3{text-decoration: overline;}
+
+
+
+    </style>
+</head>
+<body>
+    <h1>텍스트 관련 스타일(text1~)</h1>
+
+    <h2>color : 텍스트 색상을 지정</h2>
+    <pre id="c">
+        선택자{
+            color: 색상명 | 16진수 |rgb(x,x,x) | rgba(x,x,x,x)
+        }
+    </pre>
+
+    <h2>text-decoration: 텍스트에 줄을 긋거나 줄을 없앨 때 사용</h2>
+    <pre>
+        선택자{
+            text-decoration: none | underline | overline | line-through
+        }
+
+    </pre>
+
+    <ul>
+        <li id="td1">텍스트 영역 아래 줄 긋기</li>
+        <li id="td2">텍스트 영역 중간에 줄 긋기</li>
+        <li id="td3">텍스트 영역 위에 줄 긋기</li>
+       
+    </ul>
+
+    <a href="http://www.naver.com" target="_blank" style="text-decoration: none;">네이버로</a>
+
+    <hr>
+
+    <h3>text-align : 텍스트 정렬할 때 사용</h3>
+    <pre>
+        선택자{
+            text-align: left(기본값) | right | center | justify
+        }
+    </pre>
+
+    <h4>왼쪽정렬(기본값)</h4>
+    <p style="text-align: left;"> 무디스는 은행권을 향한 '상생 압박' 등 금융감독의 정책이 한국 은행들의 건전성과 수익성을 악화시킬 것으로 봤다. 은행권을 향한 사회적 책임 강화 요구에 따라 대출 금리 인하 등에 나서면서 순이자마진(NIM) 축소가 불가피하다는 설명이다.</p>
+
+    <h4>양쪽정렬</h4>
+    <p style="text-align: justify;"> 무디스는 은행권을 향한 '상생 압박' 등 금융감독의 정책이 한국 은행들의 건전성과 수익성을 악화시킬 것으로 봤다. 은행권을 향한 사회적 책임 강화 요구에 따라 대출 금리 인하 등에 나서면서 순이자마진(NIM) 축소가 불가피하다는 설명이다.</p>
+
+    <h4>중앙정렬</h4>
+    <p style="text-align: center;"> 무디스는 은행권을 향한 '상생 압박' 등 금융감독의 정책이 한국 은행들의 건전성과 수익성을 악화시킬 것으로 봤다. 은행권을 향한 사회적 책임 강화 요구에 따라 대출 금리 인하 등에 나서면서 순이자마진(NIM) 축소가 불가피하다는 설명이다.</p>
+
+    <h4>오른쪽정렬</h4>
+    <p style="text-align: right;"> 무디스는 은행권을 향한 '상생 압박' 등 금융감독의 정책이 한국 은행들의 건전성과 수익성을 악화시킬 것으로 봤다. 은행권을 향한 사회적 책임 강화 요구에 따라 대출 금리 인하 등에 나서면서 순이자마진(NIM) 축소가 불가피하다는 설명이다.</p>
+
+    <hr>
+
+    <h3>line-height : 줄 간격 조절할 때 사용</h3>
+    <pre>
+        선택자{
+            line-height : normal | px | em | %
+        }
+    </pre>
+
+    <h4>px 고정 단위 간격</h4>
+    <ps style="line-height: 30px;">무디스는 은행권을 향한 '상생 압박' 등 금융감독의 정책이 한국 은행들의 건전성과 수익성을 악화시킬 것으로 봤다. 은행권을 향한 사회적 책임 강화 요구에 따라 대출 금리 인하 등에 나서면서 순이자마진(NIM) 축소가 불가피하다는 설명이다.</ps>
+
+</body>
+</html>

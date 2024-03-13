@@ -1,0 +1,211 @@
+ div,input{box-sizing: border-box; } 
+        .wrap{width: 1000px;height: 800px; margin: auto;}
+       
+        /* 공통특성 가로 길이 100프로  */
+        .wrap>div{width: 100%;}
+        #header, #footer{height: 20%;}
+        #navigator{height: 5%;}
+        #content{height: 55%;}
+
+        #header>div, #content>div {height: 100%; float: left;}
+
+        /* 20 65 15 */
+        #header_1{width: 20%;}
+        #header_2{width: 65%;}
+        #header_3{width: 15%;}
+
+        /* 15 60 25 */
+        #content_1{width: 15%}
+        #content_2{width: 60%;}
+        #content_3{width: 25%;}
+
+
+/* 검색창 */
+
+        form,input{
+            box-sizing: border-box;
+            border: 1px solid rgb(182, 162, 162);
+            border-radius: 6px;
+        }
+        #header_2{
+            width: 600px;
+            height: 150px;
+            position: relative;
+            border-color: white;
+            display: flex;
+            
+        }
+
+        #search_form{
+            margin: auto;
+            width: 80%;
+            height: 20%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            
+            /* 네개 다 극단으로 가려고 해서 결국 가운데 배치가 된다. */
+        }
+
+        #search_form>input{height: 100%; float: left;}
+        #search_form>input:nth-child(1){
+            width: 80%;
+        }
+        #search_form>input:nth-child(2){
+            width: 20%;
+            background-color: rgb(117, 238, 117);
+        }
+
+/* 메뉴판 */
+        /* 이거바꿈 */
+        
+        #navigator{width: 1000px; height: 40px;}
+
+        ul,li,ol{
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+            
+          
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        #navi{
+            height: 100%;
+            
+            
+        }
+
+        #navi>li{
+            float: left;
+            border: lpx solid white;
+            width: 100px;
+            height: 100%;
+            text-align: center;
+            
+        }
+
+        #navi>a{
+            font-size: 18px;
+            font-weight: 900;
+            width: 100%;
+            height: 100%;
+            display: block;
+            /* vertical-align: middle; 블럭일 때는 안 된다 */
+            line-height: 45px;
+            
+        }
+
+        #navi a:hover{
+            color: rgb(55, 80, 221);
+            scale: 1.08;
+            
+        }
+
+        #navi>li>ul{
+            display: none;
+            
+        }
+
+        #navi>li>ul a{
+            font-size: 15px;
+            
+        }
+
+        #navi>li>a:hover+ul{
+            display: block;
+            
+        }
+
+        #navi>li>ul:hover{
+            display: block;
+            
+        }
+
+/*로그인 폼  */
+
+        
+        #content_3{width: 300px; height: 600px;}
+
+        #login_form{width: 100%; height: 30%;}
+        #login_form>*{width: 100%;}
+        #login_form_input{
+            height: 80%;
+        }
+        #login_form_etc{height: 20%; text-align: center;}
+
+        #login_form_input>*{height: 100%; float: left;}
+        #login_input_id_pwd{width: 65%;}
+        #login_input_button{
+            width: 35%;
+        }
+
+        #login_form_etc>a{
+            text-decoration: none;
+            color: black;
+            font-size: 12px;
+            margin: 10px;
+            vertical-align: middle;
+        }
+
+        #login_input_id_pwd>input{
+            width: 100%;
+            height: 50%;
+            box-sizing: border-box;
+        }
+
+        #login_input_button >input{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(117, 238, 117);
+        }
+
+/* 푸터  */
+
+        body{margin: 0px; padding: 0px;}
+        
+        #footer{
+            width: 100%; 
+            height: 260px;
+        }
+
+        #footer > div{width: 100%;}
+        #footer1{
+            height: 55px;
+            background-color: #f2f5f9;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+        }
+        #footer2{height: 205px;}
+
+        #footer1 > a{
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        #footer2 > p{
+            width: 100%;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        #footer2 > p:nth-child(1){
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        #footer2 > p:nth-child(3){
+            font-size: 11px;
+            font-weight: 400;
+        }
