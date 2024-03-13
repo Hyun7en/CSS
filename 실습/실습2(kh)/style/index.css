@@ -1,0 +1,9 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: black;
+    background: white;
+    font-family: "Noto Sans KR", sans-serif;
+    padding-top: 60px;
+    padding-left: 72px;
+}
