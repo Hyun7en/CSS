@@ -96,7 +96,7 @@ div[class=div-class][name~=name3]{
 
 #active-test:active{
     background-color: yellow;
-    color: red;
+    color: blue;
 }
 
 #hover-test:hover{
